@@ -10,7 +10,7 @@ This repository contains product certifications, organized by type.
 
 [RoHS](https://cert.PTSolns.com/Certifications/RoHS)
 <br>
-[REECH](https://cert.PTSolns.com/Certifications/REACH)
+[REACH](https://cert.PTSolns.com/Certifications/REACH)
 <br>
 [FCC](https://cert.PTSolns.com/Certifications/FCC)
 <br>
