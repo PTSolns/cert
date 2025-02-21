@@ -5,6 +5,9 @@
 This repository contains product certifications, organized by type.
 <br>
 <br>
+For product datasheets and supporting material, see the PTSolns Docoumentation Repository [docs.PTSolns.com](https://docs.PTSolns.com).
+<br>
+<br>
 
 ## Certifications
 
