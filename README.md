@@ -1,4 +1,4 @@
-# PTSolns Documentation Repository
+# PTSolns Certification Repository
 
 <img src="/Logo/Logo JPG_Full Color PTSolns.jpg" alt="PTSolns logo" width="143" height="57">
 
