@@ -8,15 +8,14 @@ This repository contains product certifications, organized by type.
 
 ## Certifications
 
-[RoHS](https://cert.PTSolns.com/Certifications/RoHS)
+[FCC](https://github.com/PTSolns/cert/tree/main/Certifications/FCC)
 <br>
-[REACH](https://cert.PTSolns.com/Certifications/REACH)
+[IC / ISED](https://github.com/PTSolns/cert/tree/main/Certifications/IC_ISED)
 <br>
-[FCC](https://cert.PTSolns.com/Certifications/FCC)
+[REACH](https://github.com/PTSolns/cert/tree/main/Certifications/REACH)
 <br>
-[IC / ISED](https://cert.PTSolns.com/Certifications/IC_ISED)
+[RoHS](https://github.com/PTSolns/cert/tree/main/Certifications/RoHS)
 <br>
-
 
 
   <br>
