@@ -1,111 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta property="og:title" content="PTSolns Certification Repository" />
+  <meta property="og:description" content="Find product certifications such as RoHS, REACH, FCC, IC, etc." />
+  <meta property="og:image" content="https://cert.ptsolns.com/Logo/Logo_JPG_Full_Color_Square_PTSolns.jpg" />
+  <meta property="og:url" content="https://cert.PTSolns.com" />
+  <meta property="og:type" content="website" />
+  <title>PTSolns Certification Repository</title>
+  
+  <link rel="icon" type="image/x-icon" href="/Logo/favicon.ico">
+  <link rel="shortcut icon" href="/Logo/favicon.ico">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<meta property="og:title" content="PTSolns Certification Repository" />
-<meta property="og:description" content="Find product certifications such as RoHS, REACH, FCC, IC, etc." />
-<meta property="og:image" content="https://cert.ptsolns.com/Logo/Logo_JPG_Full_Color_Square_PTSolns.jpg" />
-<meta property="og:url" content="https://cert.PTSolns.com" />
-<meta property="og:type" content="website" />
+  <style>
+    :root{
+     
+      --brand-blue: #1E89AF;
+      --brand-grey: #808184;
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-<link rel="icon" type="image/x-icon" href="/Logo/favicon.ico">
-	
-<style>
+      --bg: #0b1220;
+      --card: rgba(128, 129, 132, 0.08);
+      --text: rgba(255, 255, 255, 0.92);
+      --muted: var(--brand-grey);
+      --line: rgba(128, 129, 132, 0.25);
+      --accent: var(--brand-blue);
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 16px;
+    }
 
-hr {
-  border: none;
-  height: 3px;
-  /* Set the hr color */
-  color: #1E89AF;  /* old IE */
-  background-color: #1E89AF;  /* Modern Browsers */
-}
+    * { box-sizing: border-box; }
+    body {
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(30, 137, 175, 0.12), transparent 60%),
+        radial-gradient(900px 500px at 85% 15%, rgba(128, 129, 132, 0.1), transparent 55%),
+        radial-gradient(1000px 600px at 35% 90%, rgba(30, 137, 175, 0.08), transparent 60%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.45;
+    }
 
-body {
-  font-family: Arial;
-  margin: 0;
-}
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 40px 18px 56px; }
 
-.header {
-  padding: 10px;
-  text-align: center;
-  background: #1E89AF;
-  color: white;
-  font-size: 20px;
-}
-
-.content {padding:20px;}
-
-.button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.button1 {
-  background-color: white;
-  color: black;
-  border: 3px solid #1E89AF;
-}
-
-.button1:hover {
-  background-color: #1E89AF;
-  color: white;
-}
-
-.button1 {border-radius: 8px;}
-</style>
-</head>
-<body>
-
-<div class="header">
-  <h1>PTSolns Certification Repository</h1>
-</div>
-
-<div class="content">
-	<img src="/Logo/Logo JPG_Full Color PTSolns.jpg" alt="PTSolns logo" width="143" height="57">
-	<br>
-	<br>
-	View the repository in GitHub, <a target="_blank" rel="noopener noreferrer" href="https://github.com/PTSolns/cert">here</a>.
-	<br>
-    <br>
-	This repository contains product certifications, organized by type.
-    <br>
-	<br>
-	For product datasheets and supporting material, see the PTSolns Docoumentation Repository <a target="_blank" rel="noopener noreferrer" href="https://docs.PTSolns.com">docs.PTSolns.com</a>.
-    <br>
-	<br>
-    <h3><u>Certifications</u></h3>
+   
+    header { display:flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; justify-content: space-between; margin-bottom: 40px; }
+    .header-left { display: flex; gap: 20px; align-items: flex-start; }
+    .logo-img { border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); background: #fff;}
+    .header-text { display: flex; flex-direction: column; gap: 8px; }
     
-    <br>
-    <a target="_blank" rel="noopener noreferrer" href="https://github.com/PTSolns/cert/tree/main/Certifications/FCC">FCC</a>
-    <br>
-    <a target="_blank" rel="noopener noreferrer" href="https://cert.PTSolns.com/Certifications/IC_ISED">IC / ISED</a>
-	<br>
-    <a target="_blank" rel="noopener noreferrer" href="https://github.com/PTSolns/cert/tree/main/Certifications/REACH">REACH</a>
-	<br>
-    <a target="_blank" rel="noopener noreferrer" href="https://github.com/PTSolns/cert/tree/main/Certifications/RoHS">RoHS</a>
+    h1 { margin:0; font-size: 28px; letter-spacing: .2px; display: flex; align-items: center; }
+    .subtitle { margin: 6px 0 0; color: var(--muted); font-size: 15px; max-width: 700px; line-height: 1.6; }
 
+    
+    .header-links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 16px; width: 100%; }
+    .header-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      cursor: pointer;
+      border: 2px solid rgba(128, 129, 132, 0.4);
+      background: rgba(255,255,255,0.05);
+      color: var(--text);
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all .2s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .header-btn:hover { background: rgba(30, 137, 175, 0.15); border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
-</div>
+    
+    .grid { display:grid; grid-template-columns: 1fr; gap: 20px; margin-top: 16px; }
+    @media (min-width: 860px){ .grid { grid-template-columns: 1fr 1fr; } } /* 2 columns for wider screens */
 
-<footer>
-  <br>
-  <hr>
-  &nbsp &nbsp &nbsp<a target="_blank" rel="noopener noreferrer" href="https://ptsolns.com/pages/contact" style="text-decoration:none">Contact Us</a>
-  <br>
-  <br>
-  &nbsp &nbsp &nbsp© 2026, PTSolns Pylon Technology Solutions Ltd.
-</footer>
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .card .top { padding: 14px 16px; display:flex; gap:10px; align-items:center; justify-content: space-between; background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)); border-bottom: 1px solid var(--line); border-top-left-radius: var(--radius); border-top-right-radius: var(--radius); }
+    .card h2 { margin:0; font-size: 16px; letter-spacing: .2px; }
+    .content { padding: 20px 16px; }
+
+    
+    ul.custom-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+    ul.custom-links li a { color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 16px; transition: color 0.2s;}
+    ul.custom-links li a::before { content: '→'; color: var(--accent); font-weight: bold; }
+    ul.custom-links li a:hover { color: var(--accent); text-decoration: underline; }
+
+    
+    footer { text-align: center; padding: 30px 0; border-top: 1px solid var(--line); margin-top: 60px; font-size: 13px; color: var(--muted); }
+    footer a { color: var(--accent); text-decoration: none; font-weight: 600;}
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    
+    <header>
+      <div class="header-left">
+        <img src="/Logo/Logo JPG_Full Color PTSolns.jpg" alt="Logo" width="90" class="logo-img">
+        <div class="header-text">
+          <h1>PTSolns Certification Repository</h1>
+          <p class="subtitle">This repository contains official product certifications organized by type.</p>
+        </div>
+      </div>
+      
+      <div class="header-links">
+        <a href="https://github.com/PTSolns/cert" target="_blank" class="header-btn"><i class="fab fa-github"></i> GitHub Repo</a>
+        <a href="https://docs.ptsolns.com" target="_blank" class="header-btn"><i class="fas fa-folder-open"></i> Docs Repository</a>
+        <a href="https://ptsolns.com" target="_blank" class="header-btn"><i class="fas fa-globe"></i> Main Website</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <div class="top">
+          <h2>Product Certifications</h2>
+        </div>
+        <div class="content">
+          <p style="font-size: 15px; margin-top:0; margin-bottom:20px; color: var(--muted);">Select a standard below to view the available compliance documentation.</p>
+          <ul class="custom-links">
+            <li><a href="https://github.com/PTSolns/cert/tree/main/Certifications/FCC" target="_blank">FCC (Federal Communications Commission)</a></li>
+            <li><a href="https://cert.PTSolns.com/Certifications/IC_ISED" target="_blank">IC / ISED (Innovation, Science and Economic Development Canada)</a></li>
+            <li><a href="https://github.com/PTSolns/cert/tree/main/Certifications/REACH" target="_blank">REACH (Registration, Evaluation, Authorisation and Restriction of Chemicals)</a></li>
+            <li><a href="https://github.com/PTSolns/cert/tree/main/Certifications/RoHS" target="_blank">RoHS (Restriction of Hazardous Substances)</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <footer>
+    <a href="https://ptsolns.com/pages/contact" target="_blank">Contact Us</a>
+    <br><br>
+    &copy; 2026, PTSolns Pylon Technology Solutions Ltd.
+  </footer>
 
 </body>
 </html>
